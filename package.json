@@ -1,0 +1,31 @@
+{
+  "name": "18.typescript-machine-learning",
+  "version": "1.0.0",
+  "description": "Certainly. Here's the perfected README in English, ready to be copied and used on your GitHub repository. It's designed to be visually appealing, informative, and professional.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herfando/typescript-machine-learning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herfando/typescript-machine-learning/issues"
+  },
+  "homepage": "https://github.com/herfando/typescript-machine-learning#readme",
+  "devDependencies": {
+    "eslint": "^9.35.0",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "onnxruntime-web": "^1.22.0"
+  }
+}
