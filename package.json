@@ -1,17 +1,23 @@
 {
   "name": "18.typescript-machine-learning",
   "version": "1.0.0",
-  "description": "Certainly. Here's the perfected README in English, ready to be copied and used on your GitHub repository. It's designed to be visually appealing, informative, and professional.",
+  "type": "module",
+  "description": "Machine learning with TypeScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json",
+    "dev": "vite",
+    "test": "vitest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write .",
+    "start:example:node": "ts-node examples/node-regression/index.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/herfando/typescript-machine-learning.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Herfando",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/herfando/typescript-machine-learning/issues"
@@ -25,16 +31,7 @@
     "vitest": "^3.2.4"
   },
   "dependencies": {
-    "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow/tfjs-node": "^4.22.0",
     "onnxruntime-web": "^1.22.0"
-  },
-  "scripts": {
-  "build": "tsc -p tsconfig.json",
-  "dev": "vite",
-  "test": "vitest",
-  "lint": "eslint . --ext .ts,.tsx",
-  "format": "prettier --write .",
-  "start:example:node": "ts-node examples/node-regression/index.ts"
-}
-
+  }
 }
