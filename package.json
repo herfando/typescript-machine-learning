@@ -27,5 +27,14 @@
   "dependencies": {
     "@tensorflow/tfjs": "^4.22.0",
     "onnxruntime-web": "^1.22.0"
-  }
+  },
+  "scripts": {
+  "build": "tsc -p tsconfig.json",
+  "dev": "vite",
+  "test": "vitest",
+  "lint": "eslint . --ext .ts,.tsx",
+  "format": "prettier --write .",
+  "start:example:node": "ts-node examples/node-regression/index.ts"
+}
+
 }
