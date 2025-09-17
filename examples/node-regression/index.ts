@@ -8,3 +8,11 @@ async function run() {
   const model = tf.sequential();
   model.add(tf.layers.dense({ units: 1, inputShape: [1] }));
   model.compile({ optimizer: "sgd", loss: "meanSquaredError" });
+
+  await model.fit(xs, ys, { epochs: 200 });
+
+  const output = model.predict(tf.tensor2d([[5]], [1, 1])) as tf.Tensor;
+  output.print(); // perkiraan ~9
+}
+
+run();
